@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
-import EstablishmentsService from './services/google_list_of_establishments';
+import EstablishmentsService from './services/establishments_service';
 
 function App() {
   const [latitude, setLatitude] = useState(0)
@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     setcurrentLocation()
   }, [])
+
   async function setcurrentLocation() {
     await navigator.geolocation.getCurrentPosition(function (position) {
       setLatitude(position.coords.latitude);
