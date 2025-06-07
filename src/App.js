@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Establishment from './components/Establishment';
-
 import EstablishmentsService from './services/establishments_service';
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
     const response = await EstablishmentsService.index(latitude, longitude);
     setLocations(response.data.results);
   }
-
 
   return (
     <Fragment>
