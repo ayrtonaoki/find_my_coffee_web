@@ -82,20 +82,19 @@ const Form = (props) => {
         </TextArea>
 
         <div>
-        <ReactStars
-          count={5}
-          value={value}
-          onChange={(newValue) => {
-            console.log('Nova avaliação:', newValue);
-            setValue(newValue);
-          }}
-          size={24}
-          activeColor="#ffd700"
-          isHalf={false}
-          edit={true}
-          emptyIcon={<i className="far fa-star"></i>}
-          filledIcon={<i className="fas fa-star"></i>}
-        />
+          <ReactStars
+            count={5}
+            value={value}
+            onChange={(newValue) => {
+              setValue(newValue);
+            }}
+            size={24}
+            activeColor="#ffd700"
+            isHalf={false}
+            edit={true}
+            emptyIcon={<i className="far fa-star"></i>}
+            filledIcon={<i className="fas fa-star"></i>}
+          />
 
           <Button type="submit" className="button is-danger">Enviar</Button>
         </div>
