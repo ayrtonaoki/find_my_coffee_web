@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Form from './Form';
-import StoreService from '../../../services/rating_service';
+import StoreService from '../../../services/store_service';
 import ReactStars from 'react-rating-stars-component';
 
 const Ratings = (props) => {
